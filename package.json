@@ -1,0 +1,28 @@
+{
+  "name": "chat-node",
+  "version": "1.0.0",
+  "description": "basic chat using sockets with full stack js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandodelaconcha/chat-nodejs.git"
+  },
+  "author": "Fernando de la concha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandodelaconcha/chat-nodejs/issues"
+  },
+  "homepage": "https://github.com/fernandodelaconcha/chat-nodejs#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
