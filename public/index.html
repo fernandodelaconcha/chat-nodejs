@@ -2,29 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Chat Tutorial</title>
-    <style media="screen">
-      #chat {
-        height: 400px;
-        border: 1px solid #000;
-        width: 20%;
-      }
-      #message-box {
-        width: 20%;
-      }
-    </style>
+    <title>Chat Nodejs and Express</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-
-    <!--Chat text-->
-    <div id="chat"></div>
-
-    <!-- Chat controls-->
-    <form id="message-box">
-      <input type="text" id="nickname" placeholder="nickname">
-      <input type="text" id="chat-message" placeholder="message">
-      <input type="submit" value="Enviar>">
+    <form id="nickname-form" class="form-inline col-md-8 col-md-offset-4" autocomplete="off">
+        <input type="text" class="form-control" id="nickname" placeholder="Nickname"> &nbsp
+        <input type="submit" class="btn btn-primary" value="Confirm">
     </form>
+    <br>
+    <div class="container">
+      <!--Chat text-->
+      <div class="frame">
+            <ul id="chat" class="col-md-8 col-md-offset-2 "></ul>
+
+      </div>
+      <!-- Chat controls-->
+      <form id="message-box" class="form-inline col-md-12 col-md-offset-4" autocomplete="off">
+        <input type="text" class="form-control" id="chat-message" placeholder="Message"> &nbsp
+        <input type="submit" class="btn btn-success" value="Send">
+        <div class="clearfix"></div>
+      </form>
+  </div>
+
 
     <!-- scripts -->
       <script
